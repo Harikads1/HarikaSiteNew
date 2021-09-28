@@ -58,7 +58,7 @@ function loadTechSkills(){
                 cardRating.className ="techRating";  cardRating.style = "style='float: right;'"; cardRating.innerHTML = getProficiencyRating(t.Proficiency);
                 cardDiv.appendChild(cardRating);
 
-                let cardSkills = document.createElement("div"); 
+                let cardSkills = document.createElement("span"); 
                 cardSkills.innerText = t.Skills; cardSkills.className ="techSkills"; 
                 cardDiv.appendChild(cardSkills);
 

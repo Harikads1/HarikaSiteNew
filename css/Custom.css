@@ -16,7 +16,7 @@
   }
   
   .timeline-yr {
-    background: var(--dark-color);
+    background: var(--primary-color);
     /* background: var(--primary-color); */
     border-radius: 100%;
     position: absolute;
@@ -27,7 +27,7 @@
     padding-top: 1.6rem;
   }
   .timeline-yr span {
-    color: var(--primary-color);
+    color: var(--dark-color);
     /* color: var(--dark-color); */
     font-size: 16px;
     font-weight: bold;
@@ -69,13 +69,13 @@
   }
 
   .techSkillSection{
-    /* position: relative; */
-    min-width: 0;
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
+    pointer-events: none;
+    margin:0.3rem;
   }
 
   .techHeading{
@@ -87,9 +87,9 @@
     color: #212529;
     vertical-align: middle;
     background-color: transparent;
-    border: 1px solid transparent;
     padding: .375rem .75rem;
     font-size: 1rem;
+    pointer-events: auto;
   }
 
   .techSkills{
@@ -98,9 +98,11 @@
     color: #474559;
     vertical-align: middle;
     background-color: transparent;
-    border: 1px solid transparent;
     padding: .375rem .75rem;
     font-size: 1rem;
+    pointer-events: auto;
+    display: inline-block;
+    width: 100%;
   }
 
   .techRating{
